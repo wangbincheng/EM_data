@@ -40,5 +40,6 @@ print(prediction)
 data_ori.insert(0, '分组', prediction)
 data_ori.to_csv('./hero_out.csv', index=False, sep=',')
 
+# 评估聚类结果
 from sklearn.metrics import calinski_harabaz_score
 print(calinski_harabaz_score(data, prediction))
